@@ -13,6 +13,7 @@ jobs:
         run: echo "step1 run..."
   Deploy:
     runs-on: windows-latest
+    needs: build
     steps:
       - name: deploy job
         run: echo "step2 run..."
